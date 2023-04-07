@@ -23,3 +23,6 @@ class TestLogItDecorator(unittest.TestCase):
         
         expected_log_content = f"Timestamp: <timestamp>, Function: my_function, Arguments: (), {{}}\n"
         self.assertIn(expected_log_content, log_content)
+
+if __name__ == "__main__":
+    unittest.main()

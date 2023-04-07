@@ -32,4 +32,5 @@ class TestTimeItDecorator(unittest.TestCase):
             print_mock_calls
         )
 
-
+if __name__ == "__main__":
+    unittest.main()

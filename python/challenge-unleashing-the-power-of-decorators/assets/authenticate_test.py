@@ -23,3 +23,6 @@ class TestAuthenticateDecorator(unittest.TestCase):
         with patch('builtins.input', side_effect=['wrongusername', 'wrongpassword']):
             with self.assertRaises(Exception):
                 my_function()
+
+if __name__ == "__main__":
+    unittest.main()
