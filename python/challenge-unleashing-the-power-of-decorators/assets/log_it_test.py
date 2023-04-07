@@ -22,9 +22,8 @@ class TestLogItDecorator(unittest.TestCase):
         with open('log.txt') as log_file:
             log_content = log_file.read()
 
-        expected_log_content = f"Timestamp: \\d+\\.\\d+, Function: my_function, Arguments: \\(\\), {{}}\n"
-        actual_log_content = log_content.replace('\n', '')
-        self.assertRegex(actual_log_content, expected_log_content)
+        expected_log_content = r"Timestamp: \d+\.\d+, Function: my_function, Arguments: \(\), \{\}\n"
+        self.assertRegex(log_content, expected_log_content)
 
 if __name__ == "__main__":
     unittest.main()
