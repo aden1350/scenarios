@@ -1,7 +1,7 @@
 # Logging Decorator
 
 ```python
-import logging
+import logging, time
 
 def log_it(func):
     """
