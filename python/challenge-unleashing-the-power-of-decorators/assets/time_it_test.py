@@ -1,5 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
+import sys
+sys.path.append("/home/labex/project")
 from time_it import *
 
 class TestTimeItDecorator(unittest.TestCase):

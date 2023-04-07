@@ -1,6 +1,8 @@
 import unittest
 import logging
 import os
+import sys
+sys.path.append("/home/labex/project")
 from log_it import *
 
 class TestLogItDecorator(unittest.TestCase):

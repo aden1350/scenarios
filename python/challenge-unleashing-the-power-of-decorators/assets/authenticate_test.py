@@ -1,5 +1,7 @@
 import unittest
 from unittest.mock import patch
+import sys
+sys.path.append("/home/labex/project")
 from authenticate import *
 
 class TestAuthenticateDecorator(unittest.TestCase):
