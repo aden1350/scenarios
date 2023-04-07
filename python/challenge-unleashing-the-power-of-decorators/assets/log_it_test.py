@@ -1,7 +1,7 @@
 import unittest
 import logging
 import os
-from log_it import log_it
+from log_it import *
 
 class TestLogItDecorator(unittest.TestCase):
     def setUp(self):

@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from time_it import time_it, time
+from time_it import *
 
 class TestTimeItDecorator(unittest.TestCase):
     def test_decorator(self):

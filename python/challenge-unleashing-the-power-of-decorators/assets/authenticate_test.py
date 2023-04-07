@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from authenticate import authenticate
+from authenticate import *
 
 class TestAuthenticateDecorator(unittest.TestCase):
     def test_decorator_with_valid_credentials(self):
