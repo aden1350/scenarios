@@ -1,43 +1,30 @@
 import unittest
-from unittest.mock import MagicMock
+from unittest.mock import Mock
 import sys
 sys.path.append("/home/labex/project")
 from time_it import *
 
-class TestTimeItDecorator(unittest.TestCase):
-    def test_decorator(self):
-        @time_it
-        def my_function():
-            time.sleep(1)
-            return "done"
-        
-        start = time.time()
-        result = my_function()
-        end = time.time()
-        self.assertLess(abs(end - start), 2)
+class TestTimeIt(unittest.TestCase):
 
-        '''mock_start_time = 100
-        mock_end_time = 101.5
-        
-        with unittest.mock.patch("time.time", side_effect=[mock_start_time, mock_end_time]):
-            result = my_function()
-        
-        self.assertEqual(result, "done")
-        self.assertEqual(
-            unittest.mock.MagicMock.call_args_list[0],
-            unittest.mock.call()
-        )
+    @time_it
+    def mock_func(self):
+        return 42
 
-        
-        self.assertEqual(
-            unittest.mock.MagicMock.call_args_list[1],
-            unittest.mock.call()
-        )
-        print_mock_calls = [unittest.mock.call(f"Execution time: {mock_end_time - mock_start_time} seconds")]
-        self.assertEqual(
-            unittest.mock.MagicMock.mock_calls,
-            print_mock_calls
-        )'''
+    @time_it
+    def slow_func(self):
+        time.sleep(1)
 
-if __name__ == "__main__":
+    def test_decorator_should_return_result_of_the_decorated_function(self):
+        result = self.mock_func()
+        self.assertEqual(result, 42)
+
+    def test_decorator_should_print_execution_time(self):
+        with unittest.mock.patch('builtins.print') as mock_print:
+            self.slow_func()
+
+            mock_print.assert_called_once()
+            call_args = mock_print.call_args.args[0]
+            self.assertIn('Execution time', call_args)
+
+if __name__ == '__main__':
     unittest.main()
