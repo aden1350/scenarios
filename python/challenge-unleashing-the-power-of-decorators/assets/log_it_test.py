@@ -22,7 +22,7 @@ class TestLogItDecorator(unittest.TestCase):
         with open('log.txt') as log_file:
             log_content = log_file.read()
         
-        expected_log_content = f"Timestamp: <timestamp>, Function: my_function, Arguments: (), {{}}\n"
+        expected_log_content = f"Timestamp: {time.time()}, Function: my_function, Arguments: (), {{}}\n"
         actual_log_content = log_content.replace('\n', '')
         self.assertIn(expected_log_content, actual_log_content)
 
