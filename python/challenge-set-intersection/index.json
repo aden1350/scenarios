@@ -22,7 +22,7 @@
                     "python/data_types", "python/set"
                 ],
                 "solutions": [
-                    "step1-solution.md"
+                    "step1-solution.py"
                 ]
             }
         ],

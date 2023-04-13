@@ -1,7 +1,3 @@
-# Solution
-
-```python
-Copy code
 def set_intersection(set1: set, set2: set) -> set:
     """
     Returns a new set containing the elements that are present in both set1 and set2.
@@ -15,4 +11,3 @@ def set_intersection(set1: set, set2: set) -> set:
     """
 
     return set1.intersection(set2)
-```
