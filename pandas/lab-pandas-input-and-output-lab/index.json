@@ -1,0 +1,157 @@
+{
+    "type": "lab",
+    "title": "Pandas Input and Output Lab",
+    "description": "Use Pandas to read and write data from different data sources",
+    "difficulty": "Beginner",
+    "time": 60,
+    "details": {
+        "steps": [
+            {
+                "title": "Load Data from CSV File",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/read_csv"
+                ]
+            },
+            {
+                "title": "Load Data from Excel File",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify2.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/read_excel"
+                ]
+            },
+            {
+                "title": "Load Data from JSON File",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify3.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/read_json"
+                ]
+            },
+            {
+                "title": "Load Data from SQL Database",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify4.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/read_sql"
+                ]
+            },
+            {
+                "title": "Save Data to CSV File",
+                "text": "step5.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify5.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/to_csv"
+                ]
+            },
+            {
+                "title": "Save Data to Excel File",
+                "text": "step6.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify6.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/to_excel"
+                ]
+            },
+            {
+                "title": "Save Data to JSON File",
+                "text": "step7.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify7.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/to_json"
+                ]
+            },
+            {
+                "title": "Save Data to SQL Database",
+                "text": "step8.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify8.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "pandas/to_sql"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
