@@ -193,8 +193,14 @@
                     "file": "sales_data.json",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
-                },{
+                },
+                {
                     "file": "sales_data.xlsx",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "create_sql.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 }
