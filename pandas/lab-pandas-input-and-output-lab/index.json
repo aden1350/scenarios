@@ -145,8 +145,44 @@
         "assets": {
             "host01": [
                 {
-                    "file": "",
-                    "target": "/tmp"
+                    "file": "step1.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step2.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step3.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step4.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step5.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step6.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step7.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step8.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
                 }
             ]
         }
