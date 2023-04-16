@@ -183,6 +183,20 @@
                     "file": "step8.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "sales_data.csv",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "sales_data.json",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },{
+                    "file": "sales_data.xlsx",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
                 }
             ]
         }
