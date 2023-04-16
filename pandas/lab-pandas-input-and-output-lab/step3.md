@@ -3,6 +3,8 @@
 The third step is to load data from a JSON file using Pandas. We will use the `pd.read_json()` method to read the JSON file.
 
 ```python
+import pandas as pd
+
 # Load data from JSON file
 data = pd.read_json('sales_data.json')
 

@@ -3,6 +3,8 @@
 The second step is to load data from an Excel file using Pandas. We will use the `pd.read_excel()` method to read the Excel file.
 
 ```python
+import pandas as pd
+
 # Load data from Excel file
 data = pd.read_excel('sales_data.xlsx')
 

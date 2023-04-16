@@ -4,13 +4,13 @@ The fourth step is to load data from a SQL database using Pandas. We will use th
 
 ```python
 import pandas as pd
-from sqlalchemy import create_engine
+import sqlite3
 
-# Create a SQL database engine
-engine = create_engine('mssql+pyodbc://user:password@server/database?driver=SQL+Server')
+# Connect to SQL database
+conn = sqlite3.connect("sales_data.db")
 
 # Load data from SQL database
-data = pd.read_sql('SELECT * FROM sales', con=engine)
+data = pd.read_sql('SELECT * FROM sales', con=conn)
 
 # Print first 5 rows of the data
 print(data.head())

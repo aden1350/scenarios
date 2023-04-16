@@ -28,6 +28,12 @@ You can install these packages using pip:
 pip install pandas sqlalchemy pyodbc openpyxl
 ```
 
+Run the create_sql.py to create the SQL database:
+
+```python
+python3 create_sql.py
+```
+
 ## Dataset
 
 In this lab, we will use the `sales_data.csv` dataset. This dataset contains information about sales of various products across different regions in the world. The columns in the file are as follows:
