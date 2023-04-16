@@ -19,7 +19,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/read_csv"
+                    "python/variables"
                 ]
             },
             {
@@ -35,7 +35,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/read_excel"
+                    "python/variables"
                 ]
             },
             {
@@ -51,7 +51,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/read_json"
+                    "python/variables"
                 ]
             },
             {
@@ -67,7 +67,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/read_sql"
+                    "python/variables"
                 ]
             },
             {
@@ -83,7 +83,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/to_csv"
+                    "python/variables"
                 ]
             },
             {
@@ -99,7 +99,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/to_excel"
+                    "python/variables"
                 ]
             },
             {
@@ -115,7 +115,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/to_json"
+                    "python/variables"
                 ]
             },
             {
@@ -131,7 +131,7 @@
                     }
                 ],
                 "skills": [
-                    "pandas/to_sql"
+                    "python/variables"
                 ]
             }
         ],
