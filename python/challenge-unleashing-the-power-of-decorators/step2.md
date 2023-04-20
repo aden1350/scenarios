@@ -4,7 +4,7 @@ Create a decorator that can log the execution of a function and save the log to 
 
 ### TODO
 
-Create a decorator called `log_it` that will take in a function as an argument and log its execution. The decorator should save the log to a file named `log.txt` in the current directory. The log should include the timestamp, the function name, and the arguments passed to the function.
+In `log_it.py`, create a decorator called `log_it` that will take in a function as an argument and log its execution. The decorator should save the log to a file named `log.txt` in the current directory. The log should include the timestamp, the function name, and the arguments passed to the function.
 
 ### Examples
 

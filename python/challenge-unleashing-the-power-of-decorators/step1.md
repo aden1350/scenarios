@@ -4,7 +4,7 @@ Create a decorator that can time the execution of a function and print the execu
 
 ### TODO
 
-Create a decorator called `time_it` that will take in a function as an argument and time its execution. The decorator should print out the execution time in seconds.
+In `time_it.py`, create a decorator called `time_it` that will take in a function as an argument and time its execution. The decorator should print out the execution time in seconds.
 
 ### Examples
 

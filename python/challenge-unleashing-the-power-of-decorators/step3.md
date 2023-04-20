@@ -4,7 +4,7 @@ Create a decorator that can authenticate a user before allowing them to execute 
 
 ### TODO
 
-Create a decorator called `authenticate` that will take in a function as an argument and authenticate the user before allowing them to execute the function. The decorator should prompt the user to enter their username and password. If the username and password are correct, the function should be executed. If the username and password are incorrect, the decorator should raise an exception.
+In `authenticate.py`, create a decorator called `authenticate` that will take in a function as an argument and authenticate the user before allowing them to execute the function. The decorator should prompt the user to enter their username and password. If the username and password are correct, the function should be executed. If the username and password are incorrect, the decorator should raise an exception.
 
 ### Examples
 
