@@ -28,3 +28,10 @@ def authenticate(func):
         return
         
     return wrapper
+
+if __name__ == "__main__":
+    @authenticate
+    def my_function():
+        print("Access granted")
+
+    my_function()
