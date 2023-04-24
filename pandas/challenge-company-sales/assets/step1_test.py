@@ -1,4 +1,3 @@
-from step1 import *
 import unittest
 import pandas as pd
 import os
