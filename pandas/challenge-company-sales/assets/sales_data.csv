@@ -8,3 +8,6 @@ date,location,product_code,quantity,price
 2022-01-03,New York,A,20,100
 2022-01-03,Boston,B,30,150
 2022-01-03,Miami,C,15,200
+2022-01-03,,A,20,100
+2022-01-03,Boston,B,,150
+,Miami,C,15,200
