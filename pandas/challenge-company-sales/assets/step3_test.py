@@ -1,9 +1,9 @@
+from step3 import *
 import unittest
 import pandas as pd
 import os
 import sys
 sys.path.append("/home/labex/project")
-from step3 import *
 
 
 class TestPandasChallengeStep3(unittest.TestCase):
@@ -35,13 +35,6 @@ class TestPandasChallengeStep3(unittest.TestCase):
         self.expected_sales_by_product.to_csv(
             'sales_by_product.csv', index=False)
         self.expected_sales_by_day.to_csv('sales_by_day.csv', index=False)
-
-    def tearDown(self):
-        os.remove('sales_data.csv')
-        os.remove('sales_data_clean.csv')
-        os.remove('sales_by_location.csv')
-        os.remove('sales_by_product.csv')
-        os.remove('sales_by_day.csv')
 
     def test_sales_by_location(self):
         if 'sales_by_location' in globals():
