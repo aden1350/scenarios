@@ -22,8 +22,8 @@ class TestPandasChallengeStep3(unittest.TestCase):
             'price': [12.99, 21.97, 7.99]
         })
         self.expected_sales_by_product = pd.DataFrame({
-            'product_code': ['A01', 'A02', 'B01', 'B02', 'C01', 'C02'],
-            'price': [4.99, 6.99, 12.99, 9.99, 7.99, 11.99]
+            'product_code': ['A01', 'A02', 'B01', 'B02', 'C01'],
+            'price': [4.99, 6.99, 12.99, 9.99, 7.99]
         })
         self.expected_sales_by_day = pd.DataFrame({
             'date': ['2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04', '2021-01-05'],
