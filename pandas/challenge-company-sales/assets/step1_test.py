@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import sys
 sys.path.append("/home/labex/project")
+from step1 import *
 
 
 class TestPandasChallengeStep1(unittest.TestCase):
