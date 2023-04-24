@@ -1,9 +1,9 @@
-from step3 import *
 import unittest
 import pandas as pd
 import os
 import sys
 sys.path.append("/home/labex/project")
+from step3 import *
 
 
 class TestPandasChallengeStep3(unittest.TestCase):
