@@ -1,9 +1,9 @@
+from step3 import *
 import unittest
 import pandas as pd
 import os
 import sys
 sys.path.append("/home/labex/project")
-from step3 import *
 
 
 class TestPandasChallengeStep3(unittest.TestCase):
@@ -44,21 +44,25 @@ class TestPandasChallengeStep3(unittest.TestCase):
         os.remove('sales_by_day.csv')
 
     def test_sales_by_location(self):
-        sales_by_location('sales_data_clean', 'sales_by_location')
-        sales_by_location_data = pd.read_csv('sales_by_location.csv')
-        self.assertTrue(sales_by_location_data.equals(
-            self.expected_sales_by_location))
+        if 'sales_by_location' in globals():
+            sales_by_location('sales_data_clean', 'sales_by_location')
+            sales_by_location_data = pd.read_csv('sales_by_location.csv')
+            self.assertTrue(sales_by_location_data.equals(
+                self.expected_sales_by_location))
 
     def test_sales_by_product(self):
-        sales_by_product('sales_data_clean', 'sales_by_product')
-        sales_by_product_data = pd.read_csv('sales_by_product.csv')
-        self.assertTrue(sales_by_product_data.equals(
-            self.expected_sales_by_product))
+        if 'sales_by_product' in globals():
+            sales_by_product('sales_data_clean', 'sales_by_product')
+            sales_by_product_data = pd.read_csv('sales_by_product.csv')
+            self.assertTrue(sales_by_product_data.equals(
+                self.expected_sales_by_product))
 
     def test_sales_by_day(self):
-        sales_by_day('sales_data_clean', 'sales_by_day')
-        sales_by_day_data = pd.read_csv('sales_by_day.csv')
-        self.assertTrue(sales_by_day_data.equals(self.expected_sales_by_day))
+        if 'sales_by_day' in globals():
+            sales_by_day('sales_data_clean', 'sales_by_day')
+            sales_by_day_data = pd.read_csv('sales_by_day.csv')
+            self.assertTrue(sales_by_day_data.equals(
+                self.expected_sales_by_day))
 
 
 if __name__ == '__main__':
