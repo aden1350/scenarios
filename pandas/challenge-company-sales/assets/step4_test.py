@@ -22,9 +22,6 @@ class TestPandasChallengeStep4(unittest.TestCase):
     def tearDown(self):
         os.remove('sales_data.csv')
         os.remove('sales_data_clean.csv')
-        os.remove('sales_by_location.png')
-        os.remove('sales_by_product.png')
-        os.remove('sales_by_day.png')
 
     def test_visualize_sales_by_location(self):
         visualize_sales_by_location('sales_data_clean', 'sales_by_location.png')

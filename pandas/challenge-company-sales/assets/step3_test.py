@@ -42,9 +42,6 @@ class TestPandasChallengeStep3(unittest.TestCase):
         os.remove('sales_by_location.csv')
         os.remove('sales_by_product.csv')
         os.remove('sales_by_day.csv')
-        os.remove('sales_by_location.png')
-        os.remove('sales_by_product.png')
-        os.remove('sales_by_day.png')
 
     def test_sales_by_location(self):
         sales_by_location('sales_data_clean', 'sales_by_location')
