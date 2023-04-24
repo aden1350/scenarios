@@ -10,7 +10,7 @@ class TestPandasChallengeStep3(unittest.TestCase):
 
     def setUp(self):
         self.sales_data = pd.DataFrame({
-            'date': ['2021-01-01', '2021-01-01', '2021-01-01', '2021-01-01', '2021-01-01'],
+            'date': ['2021-01-04', '2021-01-01', '2021-01-02', '2021-01-05', '2021-01-03'],
             'location': ['New York', 'Chicago', 'Seattle', 'New York', 'New York'],
             'product_code': ['A01', 'B01', 'C01', 'A02', 'B02'],
             'price': [4.99, 12.99, 7.99, 6.99, 9.99],
@@ -27,7 +27,7 @@ class TestPandasChallengeStep3(unittest.TestCase):
         })
         self.expected_sales_by_day = pd.DataFrame({
             'date': ['2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04', '2021-01-05'],
-            'price': [67.86, 54.91, 41.94, 28.97, 28.97]
+            'price': [12.99, 7.99, 9.99, 4.99, 6.99]
         })
         self.sales_data.dropna().to_csv('sales_data_clean.csv', index=False)
         self.expected_sales_by_location.to_csv(
