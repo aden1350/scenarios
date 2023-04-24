@@ -113,6 +113,11 @@
                     "chmod": "ugo+rwx"
                 },
                 {
+                    "file": "sales_data.csv",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
                     "file": "*_test.py",
                     "target": "/tmp"
                 }
