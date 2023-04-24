@@ -36,26 +36,30 @@ class TestPandasChallengeStep3(unittest.TestCase):
             'sales_by_product.csv', index=False)
         self.expected_sales_by_day.to_csv('sales_by_day.csv', index=False)
 
+    def tearDown(self):
+        os.remove('sales_data.csv')
+        os.remove('sales_data_clean.csv')
+        os.remove('sales_by_location.csv')
+        os.remove('sales_by_product.csv')
+        os.remove('sales_by_day.csv')
+
     def test_sales_by_location(self):
-        if 'sales_by_location' in globals():
-            sales_by_location('sales_data_clean', 'sales_by_location')
-            sales_by_location_data = pd.read_csv('sales_by_location.csv')
-            self.assertTrue(sales_by_location_data.equals(
-                self.expected_sales_by_location))
+        sales_by_location('sales_data_clean', 'sales_by_location_test')
+        sales_by_location_data = pd.read_csv('sales_by_location_test.csv')
+        self.assertTrue(sales_by_location_data.equals(
+            self.expected_sales_by_location))
 
     def test_sales_by_product(self):
-        if 'sales_by_product' in globals():
-            sales_by_product('sales_data_clean', 'sales_by_product')
-            sales_by_product_data = pd.read_csv('sales_by_product.csv')
-            self.assertTrue(sales_by_product_data.equals(
-                self.expected_sales_by_product))
+        sales_by_product('sales_data_clean', 'sales_by_product_test')
+        sales_by_product_data = pd.read_csv('sales_by_product_test.csv')
+        self.assertTrue(sales_by_product_data.equals(
+            self.expected_sales_by_product))
 
     def test_sales_by_day(self):
-        if 'sales_by_day' in globals():
-            sales_by_day('sales_data_clean', 'sales_by_day')
-            sales_by_day_data = pd.read_csv('sales_by_day.csv')
-            self.assertTrue(sales_by_day_data.equals(
-                self.expected_sales_by_day))
+        sales_by_day('sales_data_clean', 'sales_by_day_test')
+        sales_by_day_data = pd.read_csv('sales_by_day_test.csv')
+        self.assertTrue(sales_by_day_data.equals(
+            self.expected_sales_by_day))
 
 
 if __name__ == '__main__':
