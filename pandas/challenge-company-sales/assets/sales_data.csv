@@ -1,0 +1,10 @@
+date,location,product_code,quantity,price
+2022-01-01,New York,A,10,100
+2022-01-01,Boston,B,20,150
+2022-01-01,Miami,C,5,200
+2022-01-02,New York,A,15,100
+2022-01-02,Boston,B,25,150
+2022-01-02,Miami,C,10,200
+2022-01-03,New York,A,20,100
+2022-01-03,Boston,B,30,150
+2022-01-03,Miami,C,15,200

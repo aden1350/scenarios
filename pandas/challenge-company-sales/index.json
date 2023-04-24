@@ -1,0 +1,125 @@
+{
+    "type": "challenge",
+    "title": "Company Sales",
+    "description": "Your goal is to use Pandas to clean and analyze the sales data provided by the store, and to present your findings to the company's executives in a clear and concise manner.",
+    "difficulty": "Beginner",
+    "time": 30,
+    "details": {
+        "steps": [
+            {
+                "title": "Loading and inspecting the data",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/variables"
+                ],
+                "solutions": [
+                    "step1-solution.py"
+                ]
+            },
+            {
+                "title": "Cleaning the data",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify2.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/variables"
+                ],
+                "solutions": [
+                    "step2-solution.py"
+                ]
+            },
+            {
+                "title": "Grouping and Aggregating the data",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify3.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/variables"
+                ],
+                "solutions": [
+                    "step3-solution.py"
+                ]
+            },
+            {
+                "title": "Visualizing the data",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify4.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/variables"
+                ],
+                "solutions": [
+                    "step4-solution.py"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "step1.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step2.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step3.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "step4.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
