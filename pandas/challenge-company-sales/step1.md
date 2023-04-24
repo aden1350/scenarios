@@ -9,19 +9,10 @@ Read in the data from the input file and write the first 5 rows to a CSV file us
 #### Example Output
 
 ```
-         date location product_code  quantity  price
-0  2022-01-01  New York            A        10    100
-1  2022-01-01   Boston            B        20    150
-2  2022-01-01    Miami            C         5    200
-3  2022-01-02  New York            A        15    100
-4  2022-01-02   Boston            B        25    150
-
-           date location product_code  quantity  price
-245  2022-09-25   Boston            B        20    150
-246  2022-09-25    Miami            C        10    200
-247  2022-09-26  New York            A        25    100
-248  2022-09-26   Boston            B        30    150
-249  2022-09-26    Miami            C        15    200
-
-(250, 5)
+         date  location product_code  quantity  price
+0  2022-01-01  New York            A      10.0    100
+1  2022-01-01    Boston            B      20.0    150
+2  2022-01-01     Miami            C       5.0    200
+3  2022-01-02  New York            A      15.0    100
+4  2022-01-02    Boston            B      25.0    150
 ```

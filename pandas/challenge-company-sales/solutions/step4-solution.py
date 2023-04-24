@@ -13,6 +13,7 @@ def visualize_sales_by_location(input_file, output_file):
     plt.xlabel('Location')
     plt.ylabel('Total Sales')
     plt.savefig(output_file)
+    plt.clf()
 
 
 def visualize_sales_by_product(input_file, output_file):
@@ -26,6 +27,7 @@ def visualize_sales_by_product(input_file, output_file):
     plt.xlabel('Product Code')
     plt.ylabel('Total Sales')
     plt.savefig(output_file)
+    plt.clf()
 
 
 def visualize_sales_by_day(input_file, output_file):
@@ -38,3 +40,4 @@ def visualize_sales_by_day(input_file, output_file):
     plt.ylabel('Total Sales')
     plt.title('Total Sales by Day')
     plt.savefig(output_file)
+    plt.clf()

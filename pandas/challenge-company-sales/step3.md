@@ -9,28 +9,16 @@ Calculate total sales by location, product code, and day using `sales_by_locatio
 #### Example Output
 
 ```
-Total sales by location:
-location
-Boston      8500
-Miami      10500
-New York    7000
-San Fran    4500
-Name: price, dtype: int64
-
-Total sales by product code:
-product_code
-A     7500
-B    12000
-C    16000
-D     6000
-E     2000
-F     7000
-Name: price, dtype: int64
-
-Total sales by day:
-date
-2022-01-01     450
-2022-01-02     750
-2022-01-03
-
+   location  price
+0    Boston    450
+1     Miami    600
+2  New York    300
+  product_code  price
+0            A    300
+1            B    450
+2            C    600
+         date  price
+0  2022-01-01    450
+1  2022-01-02    450
+2  2022-01-03    450
 ```
