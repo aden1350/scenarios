@@ -1,15 +1,15 @@
 import pandas as pd
 
 
-def sales_by_location(input_file, output_file):
+def sales_by_location(input_file: str, output_file: str):
     """Calculate total sales by location."""
 
 
-def sales_by_product(input_file, output_file):
+def sales_by_product(input_file: str, output_file: str):
     """Calculate total sales by product code."""
 
 
-def sales_by_day(input_file, output_file):
+def sales_by_day(input_file: str, output_file: str):
     """Calculate total sales by day."""
 
 

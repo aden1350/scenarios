@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def visualize_sales_by_location(input_file, output_file):
+def visualize_sales_by_location(input_file: str, output_file: str):
     """Visualize the total sales by location."""
     sales_data = pd.read_csv(input_file + '.csv').dropna()
     sales_data['location'] = pd.Categorical(sales_data['location'])
@@ -16,7 +16,7 @@ def visualize_sales_by_location(input_file, output_file):
     plt.clf()
 
 
-def visualize_sales_by_product(input_file, output_file):
+def visualize_sales_by_product(input_file: str, output_file: str):
     """Visualize the total sales by product code."""
     sales_data = pd.read_csv(input_file + '.csv').dropna()
     sales_data['product_code'] = pd.Categorical(sales_data['product_code'])
@@ -30,7 +30,7 @@ def visualize_sales_by_product(input_file, output_file):
     plt.clf()
 
 
-def visualize_sales_by_day(input_file, output_file):
+def visualize_sales_by_day(input_file: str, output_file: str):
     """Visualize the total sales by day."""
     sales_data = pd.read_csv(input_file + '.csv').dropna()
     sales_data['date'] = pd.to_datetime(sales_data['date'])
@@ -41,3 +41,8 @@ def visualize_sales_by_day(input_file, output_file):
     plt.title('Total Sales by Day')
     plt.savefig(output_file)
     plt.clf()
+
+if __name__ == '__main__':
+    visualize_sales_by_location('sales_data_clean', 'sales_by_location.png')
+    visualize_sales_by_product('sales_data_clean', 'sales_by_product.png')
+    visualize_sales_by_day('sales_data_clean', 'sales_by_day.png')

@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def clean_data(input_file, output_file):
+def clean_data(input_file: str, output_file: str):
     """Clean and preprocess the data by dropping any rows with missing values and
     converting the date column to a datetime type."""
 

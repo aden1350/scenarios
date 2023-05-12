@@ -2,15 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def visualize_sales_by_location(input_file, output_file):
+def visualize_sales_by_location(input_file: str, output_file: str):
     """Visualize the total sales by location."""
 
 
-def visualize_sales_by_product(input_file, output_file):
+def visualize_sales_by_product(input_file: str, output_file: str):
     """Visualize the total sales by product code."""
 
 
-def visualize_sales_by_day(input_file, output_file):
+def visualize_sales_by_day(input_file: str, output_file: str):
     """Visualize the total sales by day."""
 
 

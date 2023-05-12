@@ -11,15 +11,15 @@
                 "text": "step1.md",
                 "verify": [
                     {
-                        "name": "Please replace this text with the target of the verify script",
+                        "name": "Loading and inspecting the data",
                         "file": "verify1.sh",
-                        "hint": "Please replace this text with the hint of the verify script",
+                        "hint": "Please refer to the error message for more detail",
                         "timeout": 0,
                         "showstderr": true
                     }
                 ],
                 "skills": [
-                    "python/variables"
+                    "pandas/csv","pandas/head"
                 ],
                 "solutions": [
                     "step1-solution.py"
@@ -30,15 +30,15 @@
                 "text": "step2.md",
                 "verify": [
                     {
-                        "name": "Please replace this text with the target of the verify script",
+                        "name": "Cleaning the data",
                         "file": "verify2.sh",
-                        "hint": "Please replace this text with the hint of the verify script",
+                        "hint": "Please refer to the error message for more detail",
                         "timeout": 0,
                         "showstderr": true
                     }
                 ],
                 "skills": [
-                    "python/variables"
+                    "pandas/csv","pandas/dropna"
                 ],
                 "solutions": [
                     "step2-solution.py"
@@ -49,15 +49,15 @@
                 "text": "step3.md",
                 "verify": [
                     {
-                        "name": "Please replace this text with the target of the verify script",
+                        "name": "Grouping and Aggregating the data",
                         "file": "verify3.sh",
-                        "hint": "Please replace this text with the hint of the verify script",
+                        "hint": "Please refer to the error message for more detail",
                         "timeout": 0,
                         "showstderr": true
                     }
                 ],
                 "skills": [
-                    "python/variables"
+                    "pandas/csv","pandas/group_by"
                 ],
                 "solutions": [
                     "step3-solution.py"
@@ -68,15 +68,15 @@
                 "text": "step4.md",
                 "verify": [
                     {
-                        "name": "Please replace this text with the target of the verify script",
+                        "name": "Visualizing the data",
                         "file": "verify4.sh",
-                        "hint": "Please replace this text with the hint of the verify script",
+                        "hint": "Please refer to the error message for more detail",
                         "timeout": 0,
                         "showstderr": true
                     }
                 ],
                 "skills": [
-                    "python/variables"
+                    "pandas/csv","pandas/dropna","pandas/group_by"
                 ],
                 "solutions": [
                     "step4-solution.py"
