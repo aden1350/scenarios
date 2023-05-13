@@ -1,8 +1,8 @@
-# Step 3 Grouping and Aggregating the data:
+# Step 3 Grouping and Aggregating the data
 
 In this step, you will use Pandas to group the data by different variables and compute some aggregate statistics.
 
-## Requirements:
+## Requirements
 
 Calculate total sales by location, product code, and day using `sales_by_location()`, `sales_by_product()`, and `sales_by_day()`, respectively. Each function takes in two arguments, the input file name and the output file name for the calculated data. The output file will contain the calculated data.
 

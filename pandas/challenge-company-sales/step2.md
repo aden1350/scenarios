@@ -1,8 +1,8 @@
-# Step 2 Cleaning the data:
+# Step 2 Cleaning the data
 
 In this step, you will clean the data by removing any missing values, and converting the data types of some columns.
 
-## Requirements:
+## Requirements
 
 Clean and preprocess the data by dropping any rows with missing values and converting the date column to a datetime type using `clean_data()`. The function takes in two arguments, the input file name and the output file name for the cleaned data. The output file will contain the cleaned data.
 
