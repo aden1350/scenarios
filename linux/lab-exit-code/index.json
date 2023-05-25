@@ -1,0 +1,39 @@
+{
+  "type": "lab",
+  "title": "Linux Exit Code",
+  "description": "Linux exit code  lab",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "What is exit code in Linux",
+        "text": "step1.md",
+        "skills": []
+      },
+      {
+        "title": "How to get the exit code of a command",
+        "text": "step2.md",
+        "skills": ["linux/echo"]
+      },
+      {
+        "title": "Change working directory",
+        "text": "step3.md",
+        "skills": ["linux/cat"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
